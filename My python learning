@@ -1,0 +1,28 @@
+#使用if条件判断，语句依次从上往下执行，当上面的不成立，才执行下面的语句
+age = 20 
+if age >= 18:
+	print 'your age is', age
+	print 'adult'
+
+
+#使用for循环， for...in...将list或tuple中的每个元素迭代出来
+names = ['Michael', 'Bob', 'Tracy']
+for name in names:
+	print name
+
+#用for循环求和
+sum = 0
+for x in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+	sum = sum + x
+print sum
+
+#while循环，只要条件满足，就不断循环，条件不满足，就退出循环，下列为计算100以内所有奇数的和
+sum = 0
+n = 99
+while n > 0:
+	sum = sum + n
+	n = n - 2
+print sum
+
+#raw_input()读取的内容永远以字符串形式返回，比较整数大小时，需要使用int()将字符串转换为我们想要的整型
+birth = int(raw_input('birth: '))
